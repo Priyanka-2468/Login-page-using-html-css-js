@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>login</title>
+</head>
+<body>
+    <div class="content">
+        <img src="bg1.svg" alt="" class="image">
+    <div class="text">
+        <h1>LOGIN FORM</h1>
+        <div class="entry">
+        <h2>Username</h2>
+        <input type="text" placeholder="Username" class="box">
+        <h2>Password</h2>
+        <input type="text" placeholder="Password" class="box">
+        </div>
+    </div>
+    <div class="logo" >
+        <button type="submit" onclick="openPopup()">Login</button>
+        <div class="popup" id="popup">
+            <img src="404-tick.png" alt="">
+            <h2>Thank You</h2>
+            <p>Yours details has been successfully submitted. Thanks!</p>
+            <button type="button"onclick="closePopup()"> OK</button>
+        
+        </div>
+    </div>
+    
+    </div>
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("openPopup")
+        }
+        function closePopup(){
+            popup.classList.remove("openPopup")
+        }
+    </script>
+</body>
+</html>
